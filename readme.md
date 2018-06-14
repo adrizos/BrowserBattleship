@@ -4,6 +4,9 @@ This is an in-browser implementation of the classic BattleShip game.
 Uses extensive manipulation of the dom to create, populate, and maintain grid cells,
 and regex functions to parse various valid user input formats.
 
+###View a live test version of the site
+[Live Link Here](https://adrizos.github.io/BrowserBattleship/)
+
 ###Future Functionality
 I plan to add additional functionality that:
 -Moves user alert info to display on the page itself in lieu of js alerts.
