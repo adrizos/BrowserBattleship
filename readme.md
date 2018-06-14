@@ -5,7 +5,7 @@ Uses extensive manipulation of the dom to create, populate, and maintain grid ce
 and regex functions to parse various valid user input formats.
 
 ### View a live test version of the site
-[Live Link Here](https://adrizos.github.io/BrowserBattleship/)
+[adrizos.github.io/BrowserBattleship](https://adrizos.github.io/BrowserBattleship/)
 
 ### Future Functionality
 I plan to add additional functionality that:
