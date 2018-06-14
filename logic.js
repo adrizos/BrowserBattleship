@@ -1,7 +1,7 @@
 // Alex Drizos
 // BattleShip Browser Game
 //
-// javascript file for gameplay logic in Browser Battleship 
+// javascript file for gameplay logic in Browser Battleship
 
 //global variables
 var letters = "ABCDEFGHIJ".split('');
@@ -563,10 +563,7 @@ function playerTurn(targetCellId) {
 
              //hide player 1's board
              document.getElementById('boardConsole1').style.display= 'none';
-             pause(1200).then(() => {
-                 alert(player2Name + "'s Turn!");
-            });
-
+             alert(player2Name + "'s Turn!");
              document.getElementById('boardConsole2').style.display= 'block';
              currentPlayer = 2;
          }
