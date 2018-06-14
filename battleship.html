@@ -1,0 +1,94 @@
+<!-- Alex Drizos
+BattleShip Browser Game
+
+Dependencies: logic.js, style.css
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Battleship Rules!</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="logic.js"></script>
+    </head>
+    <body>
+        <!-- start of landing section -->
+        <div id="landingSection">
+            <div id="landingGraphic">
+                <img src="imgs/battleshipicon2.png" alt="battleshipicon">
+            </div>
+            <div id="landingLogo"><h1>BrowserBattleship</h1></div>
+            <div id="landingRules">
+                    <h5>Setup<br></h5>
+                    <p>
+                        1x Aircraft Carrier [5sp]
+                        1x Battleship [4sp]
+                        1x Submarine [5sp]
+                    </p>
+                    <p id="bottomlandingp"><div id="ShipInputEx">Text Input Ex: </div>A(A1-E1); B(E1-E4); S(G1-I1);</p>
+            </div>
+            <div id="userInputContainer1">
+                <label for="p1Name">Player1</label><br><input type= "text"
+                name="p1Name" placeholder="Enter name..."><br>
+                <input type="text" name="p1StartingPosition" placeholder="Enter starting ship placement..."><br><br>
+                <input onclick="player1SetupInputAction()" id="setupSubmitButton" type="submit" value="Submit"><br>
+            </div>
+            <div id="userInputContainer2">
+                <label for="p2Name">Player2</label><br><input type= "text"
+                name="p2Name" placeholder="Enter name..."><br>
+                <input type="text" name="p2StartingPosition" placeholder="Enter starting ship placement..."><br>
+                <input onclick="player2SetupInputAction()" id="setupSubmitButton" type="submit" value="Submit"><br>
+            </div>
+
+        </div>
+
+
+        <!-- start of main screen  -->
+        <div id="playWindow">
+        <header>
+                <nav>
+                    <ul id="navItems">
+                        <li> <a href="battleship.html">StartOver</a></li>
+                        <li> <a href="https://en.wikipedia.org/wiki/Battleship_(game)">History</a></li>
+                    </ul>
+                </nav>
+                <div id="logo"><h2>BrowserBattleship</h2></div>
+        </header>
+
+        <div class="boardConsole" id="boardConsole1">
+            <div class="gridContainer" id="attackContainer1">
+                <h3 class="gridTitle" id="attackTitle1">P1 Opponent's Grid</h3>
+                <div class="grid" id="attackGrid1">
+
+                </div>
+            </div>
+            <div class="gridContainer" id="defendContainer1">
+                <h3 class="gridTitle" id="defendTitle1">P1 Your Grid</h3>
+                <div class="grid" id="defendGrid1">
+
+                </div>
+            </div>
+        </div>
+        <div class="boardConsole" id="boardConsole2">
+            <div class="gridContainer" id="attackContainer2">
+                <h3 class="gridTitle" id="attackTitle2">P2 Opponent's Grid</h3>
+                <div class="grid" id="attackGrid2">
+
+                </div>
+            </div>
+            <div class="gridContainer" id="defendContainer2">
+                <h3 class="gridTitle" id="defendTitle2">P2 Your Grid</h3>
+                <div class="grid" id="defendGrid2">
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- end of playWindow -->
+
+
+        <script type="text/javascript">loadFunction();</script>
+    </body>
+</html>

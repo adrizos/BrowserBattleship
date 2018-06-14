@@ -1,0 +1,231 @@
+/* Alex Drizos
+BattleShip Browser Game
+
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100i,300,400,500,700');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} /*reset all styles*/
+
+body {
+    background: #fff;
+    color: #111;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+    max-width: 1000px;
+}
+/* start with playWindow hidden and landingSection visible */
+#playWindow {
+    display: none;
+}
+/* start with player 2's boardConsole hidden at start of player 1's turn*/
+/* TODO turn this back on */
+#boardConsole2 {
+    display: none;
+}
+#landingSection {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 30%;
+
+}
+#landingGraphic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    margin-top: 3%
+}
+#landingSection h1 {
+    text-align: center;
+    margin: 0 0 7% 0;
+    color: #db1d08;
+}
+
+#userInputContainer1 input, #userInputContainer2 input {
+    width: 400px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+#userInputContainer1 #setupSubmitButton, #userInputContainer2 #setupSubmitButton {
+    width: 200px;
+    background-color: #c9c9c9;
+    margin-top: 12px;
+}
+#userInputContainer1, #userInputContainer2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+}
+/* intially set player 2 input fields to hidden */
+#userInputContainer2 {
+    display: none;
+}
+#landingRules {
+    margin-left: auto;
+    margin-right: auto;
+    width: 435px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70%;
+    margin-bottom: 3%;
+}
+#landingRules h5 {
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 7px;
+}
+#bottomlandingp {
+    padding-top: 10px;
+}
+#ShipInputEx {
+    font-style: italic;
+    display: inline;
+}
+
+::placeholder {
+    color: #111;
+}
+
+header {
+    width: 100%;
+    margin: 25px;
+    background: #fff;
+}
+nav {
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+nav #navItems li {
+    display: inline;
+}
+
+nav #navItems li a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 20px;
+}
+#logo {
+    color: #db1d08;
+    width: 200px;
+    height: 40px;
+}
+.boardConsole {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 25px;
+    /* background-image: url("imgs/battlebackground10c.png"); */
+}
+
+.gridContainer {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+#defendContainer1 {
+    height: 300px;
+    width: 300px;
+}
+#defendContainer2 {
+    height: 300px;
+    width: 300px;
+}
+.grid {
+    width: 30%;
+    height: 380px;
+    width: 400px;
+    background-color: #edf2f7;
+}
+
+/* start of table styling */
+table {
+    padding: 15px;
+}
+table th {
+    font-weight: 100;
+}
+#defendGrid1, #defendGrid2 {
+    height: 280px;
+    width: 300px;
+}
+#defendGrid1 table, #defendGrid2 table {
+    width: 100%;
+    font-size: 80%;
+}
+#defendGrid1 table td, #defendGrid2 table td {
+    border: .5px solid black;
+    background-color: #c9d2db;
+    width: 20px;
+    height: 20px;
+}
+/* Debugging: show that each cell has proper id */
+/* #defendGrid1 #A10, #defendGrid2 #A10 {
+    background-color: black;
+} */
+
+ #attackGrid1, #attackGrid2 {
+     height: 380px;
+     width: 400px;
+ }
+ #attackGrid1 table , #attackGrid2 table {
+     witdh: 100%;
+ }
+ #attackGrid1 table td, #attackGrid2 table td {
+     border: .5px solid black;
+     background-color: #c9d2db;
+     width: 30px;
+     height: 30px;
+ }
+ /* Debugging: show that each cell has proper id */
+ /* #attackGrid1 #A10, #attackGrid2 #A10 {
+     background-color: black;
+ } */
+ /* TODO remove this if it works combining them above */
+/* player 2 table styling  */
+/* #defendGrid2 {
+    height: 280px;
+    width: 300px;
+}
+#defendGrid2 table {
+    width: 100%;
+    font-size: 80%;
+}
+#defendGrid2 table td {
+    border: .5px solid black;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+#defendGrid2 #A10 {
+    background-color: black;
+}
+ #attackGrid2 {
+     height: 380px;
+     width: 400px;
+ }
+ #attackGrid2 table {
+     witdh: 100%;
+ }
+ #attackGrid2 table td {
+     border: .5px solid black;
+     background-color: white;
+     width: 30px;
+     height: 30px;
+ }
+ #attackGrid2 #A10 {
+     background-color: black;
+ } */
