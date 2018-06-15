@@ -1,7 +1,7 @@
 ## BrowserBattleship
 
 This is an in-browser implementation of the classic BattleShip game.
-Uses extensive manipulation of the dom to create, populate, and maintain grid cells,
+Uses extensive manipulation of the DOM to create, populate, and maintain grid cells,
 and regex functions to parse various valid user input formats.
 
 ### View a live test version of the site
