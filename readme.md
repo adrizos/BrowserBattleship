@@ -11,3 +11,4 @@ and regex functions to parse various valid user input formats.
 I plan to add additional functionality that:
 - Moves user alert info to display on the page itself in lieu of js alerts.
 - Update the regex input function to check and allow for additional types of user input for ship placement
+- Fix the score keeping function to keep track of top ten scores indefinitely
